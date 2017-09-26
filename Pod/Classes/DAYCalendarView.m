@@ -323,7 +323,7 @@
     [self.weekHeaderView.arrangedSubviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UILabel *weekdayLabel = (id) obj;
         weekdayLabel.textAlignment = NSTextAlignmentCenter;
-        weekdayLabel.font = [UIFont fontWithName:@"AvenirNext" size:12];
+        weekdayLabel.font = [UIFont fontWithName:@"AvenirNext-Medium" size:12];
         weekdayLabel.textColor = (idx == 0 || idx == 6) ? self.weekdayHeaderWeekendTextColor : self.weekdayHeaderTextColor;
         if (canUseLocalizedStrings) {
             weekdayLabel.text = self.localizedStringsOfWeekday[idx];
@@ -376,7 +376,7 @@
     view.highlightTextColor = self.highlightedComponentTextColor;
     view.textLabel.alpha = self->_visibleMonth == month ? 1.0 : 0.5;
     if (self->_visibleMonth == month && self.boldPrimaryComponentText) {
-        view.textLabel.font = [UIFont fontWithName:@"AvenirNext-DemiBold" size:16];
+        view.textLabel.font = [UIFont fontWithName:@"AvenirNext-Medium" size:16];
     }
     else {
         view.textLabel.font = [UIFont fontWithName:@"AvenirNext" size:16];
